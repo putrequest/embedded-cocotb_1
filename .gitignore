@@ -1,0 +1,4 @@
+*.vcd
+*.xml
+__pycache__
+sim_build
