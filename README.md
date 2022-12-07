@@ -38,7 +38,7 @@ For more information about installation follow [official guide](https://verilato
 Code simulated by Verilator can be traced and dumped into `.vcd` or `.fst` file. In order to view this, you need an external tool, e.g. GTKWave.
 
 ```bash
-sudo apt install GTKWave
+sudo apt install gtkwave
 ```
 
 
@@ -58,7 +58,7 @@ Look at [sample](sample). It represent a very simple module that inverts ("encry
 
 **Task:**
 
-Modify [sample.sv](sample/sample.sv) and [test_sample.py](sample/test_sample.py) to insert there a simple trojan that would trigger under a timer set to 2500 us. Note that clock period is set to 10 us. Add tests in your test bench to check if it works as intended.
+Modify [sample.sv](sample/sample.sv) and [test_sample.py](sample/test_sample.py) to insert there a simple trojan that would trigger under a timer set to 2500 us. After that time, keep it for 100 us and disable it. Note that clock period is set to 10 us. Add tests in your test bench to check if it works as intended.
 
 **IMPORTANT:**
 
